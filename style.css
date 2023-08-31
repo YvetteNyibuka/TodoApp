@@ -39,15 +39,6 @@ body{
     height: 80%;
 }
 
-.task1{
-    display: flex;
-    text-align: center;
-    width: 80%;
-    padding: .5rem;
-    margin: 2rem;
-}
-
-
 .input{
     width: 80%;
     padding: 8px;
@@ -73,20 +64,24 @@ body{
 
 .task1 {
     display: flex;
+    width: 80%;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    padding: 10px;
     border: 1px solid #ccc;
     margin: 5px 0;
     background-color: #f9f9f9;
     border-radius: 5px;
+    padding: 10px;
+}
+.task1 > div {
+    flex: 1;
+    margin-right: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: start;
 }
 
-.task1 span {
-    flex-grow: 1;
-    margin-right: 10px;
-}
 
 .edit-button,
 .delete-button {
@@ -96,8 +91,7 @@ body{
     border-radius: 3px;
     color: #fff;
     font-weight: bold;
-   font-family: 'Roboto', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .edit-button {

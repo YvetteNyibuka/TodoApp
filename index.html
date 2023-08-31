@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoApp</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="form">
             <form id="task-form">
                 <h1 style="text-align: center;">Todo App ✔</h1>
-                <input type="text" id="task-input" class="input" placeholder="Create New Task" maxlength="20">
-                <input type="date" id="due-date-input" placeholder="Due Date" class="input" >
-                <input type="text" id="category-input" class="input" placeholder="Category" maxlength="20">
+                <input type="text" id="task-input" class="input" placeholder="Create New Task" >
+                <input type="date" id="due-date-input" placeholder="Due Date" class="input">
+                <input type="text" id="category-input" class="input" placeholder="Category" >
                 <button type="submit" id="add-button">Add</button>
             </form>
         </div>
         <div class="task_list">
-            
+            <div class="task-content"></div>
+            <div class="due-date"></div>
+            <div class="category"></div>
         </div>
     </div>
 
 
     <script src="./script.js"></script>
 </body>
+
 </html>

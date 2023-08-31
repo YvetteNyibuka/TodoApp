@@ -19,14 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskContainer = document.createElement("div");
         taskContainer.className = "task1";
 
-        const taskContent = document.createElement("span");
+        const taskContent = document.createElement("div");
         taskContent.textContent = taskText;
+        taskContent.className = "task-content";
 
-        const taskDueDate = document.createElement("span");
+        const taskDueDate = document.createElement("div");
         taskDueDate.textContent = dueDate;
         taskDueDate.className = "due-date";
 
-        const taskCategory = document.createElement("span");
+        const taskCategory = document.createElement("div");
         taskCategory.textContent = category;
         taskCategory.className = "category";
 
